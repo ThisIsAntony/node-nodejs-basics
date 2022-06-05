@@ -4,7 +4,24 @@
   "description": "This repository is the part of nodejs-assignments https://github.com/AlreadyBored/nodejs-assignments",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "node src/fs/create.js",
+    "copy": "node src/fs/copy.js",
+    "rename": "node src/fs/rename.js",
+    "delete": "node src/fs/delete.js",
+    "list": "node src/fs/list.js",
+    "read": "node src/fs/read.js",
+    "modules": "node src/modules/cjsToEsm.mjs",
+    "hash": "node src/hash/calcHash.js",
+    "read_stream": "node src/streams/read.js",
+    "write_stream": "node src/streams/write.js",
+    "transform_stream": "node src/streams/transform.js",
+    "compress": "node src/zip/compress.js",
+    "decompress": "node src/zip/decompress.js",
+    "worker": "node src/wt/worker.js",
+    "worker_core": "node src/wt/main.js",
+    "child_process": "node src/cp/cp.js"
+
   },
   "repository": {
     "type": "git",
