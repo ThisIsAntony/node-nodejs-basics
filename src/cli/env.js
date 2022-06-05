@@ -1,3 +1,12 @@
+import { envVar } from "../utils/constants/constants.js";
+import { env } from "process";
+
 export const parseEnv = () => {
-    // Write your code here 
+  const results = [];
+  for (let key in env) {
+    if (key.includes(envVar)) results.push(`${key}=${env[key]}`);
+  }
+  console.log(results.join("; "));
 };
+
+parseEnv();
