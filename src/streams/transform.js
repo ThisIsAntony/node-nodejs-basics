@@ -1,3 +1,13 @@
+import { stdin, stdout } from "process";
+import { ReverseStream } from "../utils/services/service.mjs";
+
 export const transform = async () => {
-    // Write your code here 
+  const reverseStream = new ReverseStream();
+
+  stdin
+    .on("data", (data) => data)
+    .pipe(reverseStream)
+    .pipe(stdout);
 };
+
+transform();
